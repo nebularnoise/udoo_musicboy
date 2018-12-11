@@ -38,19 +38,19 @@ void loop()
   rx  = analogRead(RIGHT_JOYSTICK_X_PIN);
   ry  = analogRead(RIGHT_JOYSTICK_Y_PIN);
   rsw = digitalRead(RIGHT_JOYSTICK_SW_PIN) == LOW;
-  Serial.print("RX ");Serial.print(rx);
-  Serial.print("RY ");Serial.print(ry);
-  Serial.print("RSW ");Serial.print(rsw);
+  Serial.print("RX ");Serial.println(rx);
+  Serial.print("RY ");Serial.println(ry);
+  Serial.print("RSW ");Serial.println(rsw);
 
   lx  = analogRead(LEFT_JOYSTICK_X_PIN);
   ly  = analogRead(LEFT_JOYSTICK_Y_PIN);
   lsw = digitalRead(LEFT_JOYSTICK_SW_PIN) == LOW;
-  Serial.print("LX ");Serial.print(lx);
-  Serial.print("LY ");Serial.print(ly);
-  Serial.print("LSW ");Serial.print(lsw);
+  Serial.print("LX ");Serial.println(lx);
+  Serial.print("LY ");Serial.println(ly);
+  Serial.print("LSW ");Serial.println(lsw);
 
   esw = digitalRead(EXT_SW_PIN) == LOW;
-  Serial.print("ESW ");Serial.print(esw);
+  Serial.print("ESW ");Serial.println(esw);
 
   delay(5); // wait for 5ms
 }
